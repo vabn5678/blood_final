@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+    background-position: center;
+    padding: 5px 23px 0 0;
+    margin: 0 0 0 3px;
+
+
+}
+
+.form-box {
+    position: relative;
+    width: 433px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 661px;
+}
+
+h2 {
+    font-size: 27px;
+    color: white;
+
+    margin: 31px 4px 10px 220px;
+    padding: 24px 0 0 0;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 379px;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .25s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -4px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 29px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: aliceblue;
+}
+
+.gender {
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+.bloodgroup {
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgba(223, 10, 10, 0.949);
+    background-color: rgb(127, 236, 255);
+}
+
+
+.mar {
+    margin-right: 57px;
+}
+
+.mar1 {
+    margin-right: 20px;
+}
+
+.mar3 {
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14.5px;
+}
+
+.mar2 {
+    margin-right: 10px;
+}
+
+#bg5 {
+    margin-left: 113px;
+    accent-color: red;
+}
+
+.bg1 {
+    margin-right: 20px;
+}
+
+.bg2 {
+    margin-right: 20.75px;
+}
+
+#bg1,
+#bg2,
+#bg3,
+#bg4,
+#bg5,
+#bg6,
+#bg7,
+#bg8 {
+    accent-color: red;
+}
+
+#male,
+#female,
+#others {
+    accent-color: red;
+}
+
+#console-output {
+
+    padding: 27px;
+    font-weight: 1000;
+    color: red;
+    margin: 26px;
+    padding: 0px 195px;
+
+}
+
+body {
+
+    background-image: url('./images/blood.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}

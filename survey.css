@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+section {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    padding: 10px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+
+}
+
+.container .title {
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 35px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 2.8px;
+    font-size: 20px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+form .gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-left: 25px;
+    border: 5px solid transparent;
+    transition: all .3s ease;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .past-disease-details .disease {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 200px;
+
+}
+
+form .past-disease-details .category1 {
+    display: flex;
+    width: 32%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .past-disease-details .category1 label {
+    display: flex;
+    align-items: center;
+}
+
+form .past-disease-details .category1 .hi {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-left: 25px;
+    border: 5px solid transparent;
+    transition: all .3s ease;
+}
+
+#hi-1:checked~.category1 label .a,
+#hi-2:checked~.category1 label .b {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form .button {
+    height: 45px;
+    margin: 26px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: 5px;
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+form .blood-group .bld {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 200px;
+
+}
+
+form .blood-group .category2 {
+    display: flex;
+    width: 32%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .blood-group .category2 label {
+    display: flex;
+    align-items: center;
+}
+
+form .blood-group .category2 .blg {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-left: 25px;
+    border: 5px solid transparent;
+    transition: all .3s ease;
+}
+
+#blg-1:checked~.category2 label .p,
+#blg-2:checked~.category2 label .q,
+#blg-3:checked~.category2 label .r,
+#blg-4:checked~.category2 label .s,
+#blg-5:checked~.category2 label .t,
+#blg-6:checked~.category2 label .u,
+#blg-7:checked~.category2 label .v,
+#blg-8:checked~.category2 label .w {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+.alert {
+    width: 100%;
+    background-color: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+
+}
+
+
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: larger;
+    padding: 29px;
+
+
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/blood7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

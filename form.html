@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findyourmatch</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+   
+        <h2>Enter Details To Find Your Match</h2>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="" id="formform">
+                        <div class="inputbox">
+                            <input type="text" id="name" required>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" id="state" required>
+                            <label for="">State</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" id="city" required>
+                            <label for="">City</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" id="pincode" required>
+                            <label for="">PIN Code</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" id="mobile_number" required>
+                            <label for="">Mob.no.</label>
+                        </div>
+                        <div class="gender">
+                            <label class="mar" for="">Gender</label>
+
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label class="mar3" for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label class="mar3" for="female">Female</label>
+                            <input type="radio" id="others" name="gender" value="others">
+                            <label class="mar3" for="others">Others</label>
+                        </div>
+                        <div class="bloodgroup">
+                            <label class="mar1" for="">Blood Group</label>
+
+                            <input type="radio" id="bg1" name="bg" value="A+">
+                            <label class="mar2 bg1" for="bg1">A+</label>
+                            <input type="radio" id="bg2" name="bg" value="A-">
+                            <label class="mar2 bg2" for="bg2">A-</label>
+                            <input type="radio" id="bg3" name="bg" value="B+">
+                            <label class="mar2" for="bg3">B+</label>
+                            <input type="radio" id="bg4" name="bg" value="B-">
+                            <label class="mar2" for="bg4">B-</label><br>
+                            <input type="radio" id="bg5" name="bg" value="AB+">
+                            <label class="mar2" for="bg5">AB+</label>
+                            <input type="radio" id="bg6" name="bg" value="AB-">
+                            <label class="mar2" for="bg6">AB-</label>
+                            <input type="radio" id="bg7" name="bg" value="O+">
+                            <label class="mar2" for="bg7">O+</label>
+                            <input type="radio" id="bg8" name="bg" value="O-">
+                            <label class="mar2" for="bg8">O-</label>
+                        </div>
+                        <button type="submit">FIND</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+    <div id="console-output">
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
